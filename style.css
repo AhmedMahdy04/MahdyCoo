@@ -1,0 +1,248 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #001f24; /* Deep Cyan */
+    color: #F8E9B8; /* Light warm text */
+}
+
+.navbar {
+    background-color: #152d32; /* Dark Teal */
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 2.5rem; /* Larger title */
+    color: #F8E9B8; /* Light warm color */
+    margin-left: 20px; /* Adjusting to the far left */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar ul li a {
+    color: #F8E9B8; /* Light warm color */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #0f4539; /* Highlight color */
+}
+
+.hero-section {
+    background-color: #2f3b22; /* Olive Green */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #F8E9B8; /* Light warm color */
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-title {
+    font-size: 3.5rem; /* Larger title */
+    margin: 0; /* Remove default margin */
+}
+
+.hero-subtitle {
+    font-size: 1.8rem; /* Subtitle size */
+    margin: 0.5rem 0; /* Adjust margin */
+}
+
+.hero-content {
+    margin-top: 20px; /* Space between hero elements */
+}
+
+.cta-btn {
+    background-color: #0f4539; /* Teal */
+    padding: 0.7rem 1.5rem;
+    color: white;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: background-color 0.3s; /* Smooth background color transition */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.cta-btn:hover {
+    background-color: #052d0a; /* Dark Olive */
+}
+
+.additional-info {
+    font-size: 1rem; /* Info text size */
+    margin-top: 1rem; /* Space between button and info */
+}
+
+.features-section {
+    background-color: #152d32; /* Dark Teal */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.features-section h2 {
+    color: #F8E9B8; /* Light warm color */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px;
+}
+
+.feature-card {
+    background-color: #001f24; /* Deep Cyan */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card h3 {
+    margin: 0; /* Remove default margin */
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Enhanced animations */
+.product-card {
+    background-color: #052d0a; /* Dark Olive */
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Animations */
+.hero-title {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-subtitle {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.cta-btn {
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+/* Fade-in effect */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Enhanced Services Page Styles */
+.services-section {
+    background-color: #152d32; /* Dark Teal */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services-section h2 {
+    color: #F8E9B8; /* Light warm color */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    padding: 20px; /* Padding around grid */
+}
+
+.service-card {
+    background-color: #001f24; /* Deep Cyan */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s; /* Added shadow transition */
+}
+
+.service-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Increased shadow on hover */
+}
+
+/* Enhanced Contact Page Styles */
+.contact-section {
+    background-color: #152d32; /* Dark Teal */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    color: #F8E9B8; /* Light warm color */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column; /* Stack form fields */
+    align-items: center;
+    max-width: 500px; /* Limit width for better symmetry */
+    margin: auto; /* Center the form */
+}
+
+.form-group {
+    width: 100%; /* Full width */
+    margin-bottom: 20px; /* Space between fields */
+}
+
+.form-group label {
+    color: #F8E9B8; /* Light warm color */
+    margin-bottom: 5px; /* Space below label */
+    display: block; /* Block display for labels */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Padding inside inputs */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #001f24; /* Deep Cyan */
+    color: #F8E9B8; /* Light warm text */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none; /* Remove outline on focus */
+    box-shadow: 0 0 5px rgba(15, 69, 57, 0.8); /* Highlight on focus */
+}
+
+.cta-btn {
+    background-color: #0f4539; /* Teal */
+    padding: 0.7rem 1.5rem;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Added box-shadow transition */
+    border-radius: 5px; /* Rounded corners */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.cta-btn:hover {
+    background-color: #052d0a; /* Dark Olive */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Added shadow on hover */
+}

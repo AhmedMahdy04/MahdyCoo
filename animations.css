@@ -1,0 +1,90 @@
+/* Smooth animations for hero title */
+.hero-title {
+    animation: fadeIn 1.5s ease-in-out, slideIn 1s ease-in-out forwards;
+}
+.hero-subtitle {
+    animation: fadeIn 2s ease-in-out, slideIn 1s ease-in-out forwards;
+}
+.cta-btn {
+    animation: fadeIn 2.5s ease-in-out, bounce 1s ease-in-out forwards;
+}
+
+/* Fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+[data-aos="fade-up"] {
+    animation: fadeIn 0.5s forwards;
+}
+
+
+/* Slide-in effect */
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Bounce effect */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-15px); }
+    60% { transform: translateY(-10px); }
+}
+
+/* Additional animations for the features section */
+.feature-item {
+    animation: fadeIn 1.5s ease-in-out forwards;
+    opacity: 0; /* Start hidden for animation */
+}
+
+.feature-item:nth-child(1) {
+    animation-delay: 0.5s; /* Stagger animations */
+}
+
+.feature-item:nth-child(2) {
+    animation-delay: 1s; /* Stagger animations */
+}
+
+.feature-item:nth-child(3) {
+    animation-delay: 1.5s; /* Stagger animations */
+}
+
+/* Slide-in effect */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Bounce effect */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Apply animations to elements */
+h2 {
+    animation: slideIn 1s ease forwards;
+}
+
+button {
+    animation: bounce 1s infinite;
+}
