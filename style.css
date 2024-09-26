@@ -54,11 +54,13 @@ body {
 .hero-title {
     font-size: 3.5rem; /* Larger title */
     margin: 0; /* Remove default margin */
+    animation: fadeIn 1.5s ease-in-out; /* Animation */
 }
 
 .hero-subtitle {
     font-size: 1.8rem; /* Subtitle size */
     margin: 0.5rem 0; /* Adjust margin */
+    animation: fadeIn 2s ease-in-out; /* Animation */
 }
 
 .hero-content {
@@ -73,6 +75,7 @@ body {
     margin-top: 1rem;
     transition: background-color 0.3s; /* Smooth background color transition */
     border-radius: 5px; /* Rounded corners */
+    animation: fadeIn 2.5s ease-in-out; /* Animation */
 }
 
 .cta-btn:hover {
@@ -133,19 +136,6 @@ body {
 
 .product-card:hover {
     transform: translateY(-5px); /* Slight lift on hover */
-}
-
-/* Animations */
-.hero-title {
-    animation: fadeIn 1.5s ease-in-out;
-}
-
-.hero-subtitle {
-    animation: fadeIn 2s ease-in-out;
-}
-
-.cta-btn {
-    animation: fadeIn 2.5s ease-in-out;
 }
 
 /* Fade-in effect */
@@ -247,4 +237,5 @@ body {
 
 .cta-btn:hover {
     background-color: #052d0a; /* Dark Olive */
-    box-shadow: 0 4px 15px rgba(0, 0, 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Added shadow on hover */
+}
