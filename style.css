@@ -2,12 +2,12 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #0d0d0d; /* Dark background */
-    color: #ffffff; /* White text */
+    background-color: #001F3F; /* Dark background */
+    color: #EAD8B1; /* Light text */
 }
 
 .navbar {
-    background-color: #0d0d0d; /* Dark background */
+    background-color: #001F3F; /* Dark background */
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -19,7 +19,7 @@ body {
 
 .logo {
     font-size: 2.5rem; /* Larger title */
-    color: #ffffff; /* White color */
+    color: #EAD8B1; /* Light color */
     margin-left: 20px; /* Adjusting to the far left */
 }
 
@@ -30,23 +30,23 @@ body {
 }
 
 .navbar ul li a {
-    color: #ffffff; /* White color */
+    color: #EAD8B1; /* Light color */
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .navbar ul li a:hover {
-    color: #0f4539; /* Highlight color */
+    color: #6A9AB0; /* Highlight color */
 }
 
 .hero-section {
-    background-color: #0d0d0d; /* Dark background */
+    background-color: #001F3F; /* Dark background */
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #ffffff; /* White color */
+    color: #EAD8B1; /* Light color */
     text-align: center;
     padding: 20px;
 }
@@ -54,13 +54,11 @@ body {
 .hero-title {
     font-size: 3.5rem; /* Larger title */
     margin: 0; /* Remove default margin */
-    animation: fadeIn 1.5s ease-in-out; /* Animation */
 }
 
 .hero-subtitle {
     font-size: 1.8rem; /* Subtitle size */
     margin: 0.5rem 0; /* Adjust margin */
-    animation: fadeIn 2s ease-in-out; /* Animation */
 }
 
 .hero-content {
@@ -68,18 +66,17 @@ body {
 }
 
 .cta-btn {
-    background-color: #0f4539; /* Teal */
+    background-color: #3A6D8C; /* Teal */
     padding: 0.7rem 1.5rem;
-    color: white;
+    color: #EAD8B1; /* Light text */
     text-decoration: none;
     margin-top: 1rem;
     transition: background-color 0.3s; /* Smooth background color transition */
     border-radius: 5px; /* Rounded corners */
-    animation: fadeIn 2.5s ease-in-out; /* Animation */
 }
 
 .cta-btn:hover {
-    background-color: #052d0a; /* Dark Olive */
+    background-color: #6A9AB0; /* Lighter Teal */
 }
 
 .additional-info {
@@ -88,13 +85,13 @@ body {
 }
 
 .features-section {
-    background-color: #0d0d0d; /* Dark background */
+    background-color: #001F3F; /* Dark background */
     padding: 40px 20px;
     text-align: center;
 }
 
 .features-section h2 {
-    color: #ffffff; /* White color */
+    color: #EAD8B1; /* Light color */
     margin-bottom: 20px; /* Space below heading */
 }
 
@@ -106,7 +103,7 @@ body {
 }
 
 .feature-card {
-    background-color: #0d0d0d; /* Dark background */
+    background-color: #3A6D8C; /* Teal */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
@@ -119,15 +116,15 @@ body {
 }
 
 .footer {
-    background-color: #0d0d0d; /* Dark background */
-    color: white;
+    background-color: #001F3F; /* Dark background */
+    color: #EAD8B1; /* Light text */
     text-align: center;
     padding: 1rem;
 }
 
 /* Enhanced animations */
 .product-card {
-    background-color: #052d0a; /* Dark Olive */
+    background-color: #3A6D8C; /* Teal */
     padding: 1rem;
     border-radius: 8px;
     margin: 1rem;
@@ -138,6 +135,19 @@ body {
     transform: translateY(-5px); /* Slight lift on hover */
 }
 
+/* Animations */
+.hero-title {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-subtitle {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.cta-btn {
+    animation: fadeIn 2.5s ease-in-out;
+}
+
 /* Fade-in effect */
 @keyframes fadeIn {
     from { opacity: 0; }
@@ -146,13 +156,13 @@ body {
 
 /* Enhanced Services Page Styles */
 .services-section {
-    background-color: #0d0d0d; /* Dark background */
+    background-color: #001F3F; /* Dark background */
     padding: 40px 20px;
     text-align: center;
 }
 
 .services-section h2 {
-    color: #ffffff; /* White color */
+    color: #EAD8B1; /* Light color */
     margin-bottom: 20px; /* Space below heading */
 }
 
@@ -164,7 +174,7 @@ body {
 }
 
 .service-card {
-    background-color: #0d0d0d; /* Dark background */
+    background-color: #3A6D8C; /* Teal */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -178,13 +188,13 @@ body {
 
 /* Enhanced Contact Page Styles */
 .contact-section {
-    background-color: #0d0d0d; /* Dark background */
+    background-color: #001F3F; /* Dark background */
     padding: 40px 20px;
     text-align: center;
 }
 
 .contact-section h2 {
-    color: #ffffff; /* White color */
+    color: #EAD8B1; /* Light color */
     margin-bottom: 20px; /* Space below heading */
 }
 
@@ -202,7 +212,7 @@ body {
 }
 
 .form-group label {
-    color: #ffffff; /* White color */
+    color: #EAD8B1; /* Light color */
     margin-bottom: 5px; /* Space below label */
     display: block; /* Block display for labels */
 }
@@ -213,21 +223,21 @@ body {
     padding: 10px; /* Padding inside inputs */
     border: none; /* Remove default border */
     border-radius: 5px; /* Rounded corners */
-    background-color: #0d0d0d; /* Dark background */
-    color: #ffffff; /* White color */
+    background-color: #3A6D8C; /* Teal */
+    color: #EAD8B1; /* Light color */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none; /* Remove outline on focus */
-    box-shadow: 0 0 5px rgba(15, 69, 57, 0.8); /* Highlight on focus */
+    box-shadow: 0 0 5px rgba(106, 154, 176, 0.8); /* Highlight on focus */
 }
 
 .cta-btn {
-    background-color: #0f4539; /* Teal */
+    background-color: #3A6D8C; /* Teal */
     padding: 0.7rem 1.5rem;
-    color: white;
+    color: #EAD8B1; /* Light text */
     text-decoration: none;
     transition: background-color 0.3s, box-shadow 0.3s; /* Added box-shadow transition */
     border-radius: 5px; /* Rounded corners */
@@ -236,6 +246,6 @@ body {
 }
 
 .cta-btn:hover {
-    background-color: #052d0a; /* Dark Olive */
+    background-color: #6A9AB0; /* Lighter Teal */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Added shadow on hover */
 }
