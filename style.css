@@ -54,13 +54,11 @@ body {
 .hero-title {
     font-size: 3.5rem; /* Larger title */
     margin: 0; /* Remove default margin */
-    animation: fadeIn 1.5s ease-in-out; /* Fade-in effect */
 }
 
 .hero-subtitle {
     font-size: 1.8rem; /* Subtitle size */
     margin: 0.5rem 0; /* Adjust margin */
-    animation: fadeIn 2s ease-in-out; /* Fade-in effect */
 }
 
 .hero-content {
@@ -75,7 +73,6 @@ body {
     margin-top: 1rem;
     transition: background-color 0.3s; /* Smooth background color transition */
     border-radius: 5px; /* Rounded corners */
-    animation: fadeIn 2.5s ease-in-out; /* Fade-in effect */
 }
 
 .cta-btn:hover {
@@ -250,5 +247,4 @@ body {
 
 .cta-btn:hover {
     background-color: #052d0a; /* Dark Olive */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Added shadow on hover */
-}
+    box-shadow: 0 4px 15px rgba(0, 0, 
